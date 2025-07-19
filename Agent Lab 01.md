@@ -13,11 +13,6 @@ Create a Tech Support Agent that responds to common requests:
 
 ### Step 1: Create a New Tool (Custom Prompt)
 
-**🎯 Goal:** Create a reusable AI-powered tool to answer technical questions with clarity and friendliness.
-
-**🔎 Why this matters:**
-This tool acts as a building block for AI responses. Once it's built, it can be reused in different agents or flows.
-
 1. Go to the **Tools** tab.
 2. Click on **+ New tool** (blue button).
 3. Select **Prompt** as the tool type.
@@ -28,29 +23,29 @@ This tool acts as a building block for AI responses. Once it's built, it can be 
    ```
 
    This tells the AI how to behave: simplify, explain, and optionally use examples.   
-6. Press **Enter** or click the arrow button to generate the preview.
-7. When a variable appears at the bottom (usually called Technical Question), click it.
-8. Change the **Name** to `question`.
-9. Set **Sample data** to:
+5. Press **Enter** or click the arrow button to generate the preview.
+6. When a variable appears at the bottom (usually called Technical Question), click it.
+7. Change the **Name** to `question`.
+8. Set **Sample data** to:
 
    ```
    What is the difference between Azure Blob Storage and Azure Files?
    ```
-10. Click **Close**.
+9. Click **Close**.
 
 <img width="919" height="333" alt="image" src="https://github.com/user-attachments/assets/96797bd1-dba7-45c6-9098-61b1983d93d5" />
 
-11. Click **Test** (top-right), select the sample data, and ensure the output makes sense. This step confirms the prompt logic works as intended.
+10. Click **Test** (top-right), select the sample data, and ensure the output makes sense. This step confirms the prompt logic works as intended.
     
-13. Click **Save**.
+11. Click **Save**.
     
-14. In the required **Description** for the agent to know when to use this tool, enter:
+12. In the required **Description** for the agent to know when to use this tool, enter:
 
     ```
     This tool helps answer technical questions in a clear and friendly way, with simple examples when needed.
     ```
-15. Click **Add**.
-16. Click **Save** to save it.
+13. Click **Add**.
+14. Click **Save** to save it.
 
 The tool is now ready for use by an agent.
 
@@ -58,10 +53,6 @@ The tool is now ready for use by an agent.
 
 ### Step 2: Create a New Agent
 
-**🎯 Goal:** Define a digital agent that uses the tool we created to respond to questions.
-
-**🔎 Why this matters:**
-The agent is the interface users interact with. Connecting it to the tool makes it intelligent and helpful.
 
 1. Navigate to the **Agents** section.
 2. Click on **+ New agent**.
@@ -86,11 +77,6 @@ The agent is the interface users interact with. Connecting it to the tool makes 
 
 ### Step 3: Add the Custom Prompt Tool to the Agent
 
-**🎯 Goal:** Make the tool available for the agent to use in conversations.
-
-**🔎 Why this matters:**
-Without adding the tool to the agent, the agent won’t know it exists or be able to use it.
-
 1. In the agent view, go to the **Tools** tab.
 2. Click **Add tool**.
 3. Select the tool: `Custom prompt` (or the name you see).
@@ -100,11 +86,6 @@ Without adding the tool to the agent, the agent won’t know it exists or be abl
 
 ### Step 4: Create a New Topic
 
-**🎯 Goal:** Define a structured interaction (flow) around common password-related issues.
-
-**🔎 Why this matters:**
-Topics let you create guided conversations with users, such as password recovery flows.
-
 1. Navigate to the **Topics** tab.
 2. Click **+ Add a topic → From blank**.
 3. Name the topic: `Forgot Password`.
@@ -113,11 +94,6 @@ Topics let you create guided conversations with users, such as password recovery
 
 ### Step 5: Define the Trigger
 
-**🎯 Goal:** Let the agent decide when to activate this topic.
-
-**🔎 Why this matters:**
-The trigger defines when this flow will be invoked based on user input.
-
 1. In the **Trigger** section, leave it as **The agent chooses**.
 
    This allows Copilot to match user input using AI intent recognition.
@@ -125,11 +101,6 @@ The trigger defines when this flow will be invoked based on user input.
 ---
 
 ### Step 6: Ask the User a Question
-
-**🎯 Goal:** Understand what the user actually needs help with.
-
-**🔎 Why this matters:**
-Asking the user a clarifying question ensures we offer the correct path for help.
 
 1. Click the **+** under the trigger.
 2. Select **Ask a question**.
@@ -141,17 +112,7 @@ Asking the user a clarifying question ensures we offer the correct path for help
 
 <img width="324" height="632" alt="image" src="https://github.com/user-attachments/assets/d1a76c67-bbb2-4c1b-955d-ef107d8f769b" />
 
-
-   We’ll use this variable in the next step to branch the flow.
-
----
-
-### Step 7: Add Condition Nodes
-
-**🎯 Goal:** Handle user responses with specific guidance.
-
-**🔎 Why this matters:**
-Conditions personalize the conversation flow based on user answers.
+For each condition box enter:
 
 **Condition 1: Reset my password**
 
@@ -193,22 +154,12 @@ This is a fallback for unmatched user inputs.
 
 ### Step 8: Save and Publish
 
-**🎯 Goal:** Finalize and deploy the work so users can interact with it.
-
-**🔎 Why this matters:**
-Until you publish, your changes are saved locally and won’t be used in live environments.
-
 1. Click **Save** (top right).
 2. Click **Publish** (top right) to deploy the topic.
 
 ---
 
 ### Step 9: Test the Agent
-
-**🎯 Goal:** Verify the full flow is working as expected.
-
-**🔎 Why this matters:**
-Testing validates the end-user experience and ensures the logic works properly.
 
 1. Click the **Test** button (top-right).
 2. Enter inputs like:
