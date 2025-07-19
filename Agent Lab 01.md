@@ -1,4 +1,4 @@
-# Copilot Studio Lab: Password Support Agent
+# Copilot Studio Lab: Agent Lab 01
 
 This lab will guide you through the step-by-step process of building a simple support agent in Microsoft Copilot Studio. The agent will assist users in resetting passwords or unlocking their accounts.
 
