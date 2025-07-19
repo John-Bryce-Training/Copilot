@@ -1,4 +1,4 @@
-# Copilot Studio Lab: Adding Agent Flows to a Password Support Agent
+# Copilot Studio Lab: Agent Lab 02
 
 ## Objective
 
