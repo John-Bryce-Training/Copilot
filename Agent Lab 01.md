@@ -172,17 +172,3 @@ This is a fallback for unmatched user inputs.
 ---
 
 ## Lab Complete ✅
-
-You have now built a working support agent in Copilot Studio with:
-
-* A prompt-based tool for answering technical questions
-* A topic that handles common user issues
-* A full test and publish flow
-
-**Next steps:**
-
-* Add more tools (e.g., summarize emails, explain commands)
-* Build flows for common IT tasks
-* Connect to data or external APIs
-
-**End of lab file**
