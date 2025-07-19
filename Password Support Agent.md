@@ -40,15 +40,17 @@ This tool acts as a building block for AI responses. Once it's built, it can be 
 
 <img width="919" height="333" alt="image" src="https://github.com/user-attachments/assets/96797bd1-dba7-45c6-9098-61b1983d93d5" />
 
-11. Click **Test** (top-right), select the sample data, and ensure the output makes sense.
-
-    This step confirms the prompt logic works as intended.
-12. In the required **Description** for the agent to know when to use this tool, enter:
+11. Click **Test** (top-right), select the sample data, and ensure the output makes sense. This step confirms the prompt logic works as intended.
+    
+13. Click **Save**.
+    
+14. In the required **Description** for the agent to know when to use this tool, enter:
 
     ```
     This tool helps answer technical questions in a clear and friendly way, with simple examples when needed.
     ```
-13. Click **Save**.
+15. Click **Add**.
+16. Click **Save** to save it.
 
 The tool is now ready for use by an agent.
 
@@ -64,7 +66,7 @@ The agent is the interface users interact with. Connecting it to the tool makes 
 1. Navigate to the **Agents** section.
 2. Click on **+ New agent**.
 3. Click **Skip to configure** (top-right corner) to bypass the wizard and set up manually.
-4. Name your agent: `Tech Support Agent`.
+4. Name your agent: `AI Tech Support Agent`.
 5. Description:
 
    ```
@@ -75,6 +77,9 @@ The agent is the interface users interact with. Connecting it to the tool makes 
    ```
    This agent answers users’ technical questions in a clear, simple, and friendly manner. It reads each question carefully, provides a straightforward explanation, and avoids unnecessary technical jargon. When relevant, it uses examples or code snippets to clarify the answer.
    ```
+
+   <img width="551" height="857" alt="image" src="https://github.com/user-attachments/assets/35f79a94-ebdb-4043-b5a8-61fb25b1af8b" />
+
 7. Click **Create**.
 
 ---
@@ -87,9 +92,9 @@ The agent is the interface users interact with. Connecting it to the tool makes 
 Without adding the tool to the agent, the agent won’t know it exists or be able to use it.
 
 1. In the agent view, go to the **Tools** tab.
-2. Click **Add tool to agent**.
+2. Click **Add tool**.
 3. Select the tool: `Custom prompt` (or the name you see).
-4. Confirm the addition.
+4. Click **Add to agent** to confirm the addition.
 
 ---
 
@@ -148,12 +153,11 @@ Asking the user a clarifying question ensures we offer the correct path for help
 **🔎 Why this matters:**
 Conditions personalize the conversation flow based on user answers.
 
-1. Click **+** below the question to add a **Condition** block.
+**Condition 1: Reset my password**
 
-**Condition 1: Password Reset**
-
-* **If:** userIssue equals `Reset my password`
-* **Then:** Add a **Message**:
+* **is equal to**  `Reset my password`
+* Click on the (+) button and than choose **Send a message**.
+* At the Message box, past this:
 
   ```
   To reset your password, please follow this link: https://reset.yourdomain.com
@@ -161,10 +165,11 @@ Conditions personalize the conversation flow based on user answers.
   If you need further help, let me know!
   ```
 
-**Condition 2: Unlock Account**
+**Condition 2: Unlock my account**
 
-* **If:** userIssue equals `Unlock my account`
-* **Then:** Add a **Message**:
+* **is equal to**  `Unlock my account`
+* Click on the (+) button and than choose **Send a message**.
+* At the Message box, past this:
 
   ```
   To unlock your account, please contact IT support at it-support@yourdomain.com or call extension 1234.
@@ -172,13 +177,17 @@ Conditions personalize the conversation flow based on user answers.
 
 **All Other Conditions**
 
-* Under **All other conditions**, add:
+* Under **All other conditions** click on the (+) button and than choose **Send a message**.
+* At the Message box, past this
 
   ```
   I'm sorry, I can't help with that request right now. Please contact our support team for further assistance.
   ```
 
 This is a fallback for unmatched user inputs.
+
+<img width="680" height="637" alt="image" src="https://github.com/user-attachments/assets/b9f993cf-cb23-4797-a420-4f7bb38c165f" />
+
 
 ---
 
