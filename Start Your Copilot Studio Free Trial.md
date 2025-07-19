@@ -26,7 +26,7 @@ Go to the following link to begin:
 visit:
   [https://learn.microsoft.com/en-gb/users/me/achievements?WT.mc_id=ilt_partner_webpage_wwl&ocid=505188&redeem=XJY796](https://learn.microsoft.com/en-gb/users/me/achievements?WT.mc_id=ilt_partner_webpage_wwl&ocid=505188&redeem=XJY796)
 
-*If needed, your registration code is: XJY796
+- If needed, your registration code is: **XJY796**
 ---
 
 Good luck!
