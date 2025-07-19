@@ -9,11 +9,6 @@ Create a Tech Support Agent that responds to common requests:
 * Reset my password
 * Unlock my account
 
-## Prerequisites
-
-* Microsoft Copilot Studio account (Free Trial or licensed)
-* Logged into the environment
-
 ## Step-by-Step Instructions
 
 ### Step 1: Create a New Tool (Custom Prompt)
@@ -32,25 +27,28 @@ This tool acts as a building block for AI responses. Once it's built, it can be 
    Answer the user's technical question with a simple explanation. Use friendly tone and, when relevant, include an example or short code snippet.
    ```
 
-   This tells the AI how to behave: simplify, explain, and optionally use examples.
-5. Press **Enter** or click the arrow button to generate the preview.
-6. When a variable appears at the bottom (usually called Technical Question), click it.
-7. Change the **Name** to `question`.
-8. Set **Sample data** to:
+   This tells the AI how to behave: simplify, explain, and optionally use examples.   
+6. Press **Enter** or click the arrow button to generate the preview.
+7. When a variable appears at the bottom (usually called Technical Question), click it.
+8. Change the **Name** to `question`.
+9. Set **Sample data** to:
 
    ```
    What is the difference between Azure Blob Storage and Azure Files?
    ```
-9. Click **Close**.
-10. Click **Test** (top-right), select the sample data, and ensure the output makes sense.
+10. Click **Close**.
+
+<img width="919" height="333" alt="image" src="https://github.com/user-attachments/assets/96797bd1-dba7-45c6-9098-61b1983d93d5" />
+
+11. Click **Test** (top-right), select the sample data, and ensure the output makes sense.
 
     This step confirms the prompt logic works as intended.
-11. In the required **Description** for the agent to know when to use this tool, enter:
+12. In the required **Description** for the agent to know when to use this tool, enter:
 
     ```
     This tool helps answer technical questions in a clear and friendly way, with simple examples when needed.
     ```
-12. Click **Save**.
+13. Click **Save**.
 
 The tool is now ready for use by an agent.
 
@@ -135,8 +133,9 @@ Asking the user a clarifying question ensures we offer the correct path for help
 
    * Reset my password
    * Unlock my account
-   * Other
-5. Change variable name from `Var1` to `userIssue`.
+
+<img width="324" height="632" alt="image" src="https://github.com/user-attachments/assets/d1a76c67-bbb2-4c1b-955d-ef107d8f769b" />
+
 
    We’ll use this variable in the next step to branch the flow.
 
