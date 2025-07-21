@@ -26,7 +26,7 @@ Notes: your flow is saved under "Untitled" name by default.
 ## Step 2: Connect the Flow to Your Agent
 
 1. Open the **Agent** you created earlier (e.g., `AI Tech Support Agent`).
-2. Go to the **Topcs** tab inside the agent settings.
+2. Go to the **Topics** tab inside the agent settings.
 3. Click **Add a topic**.
 4. Select your flow (`Forgot Password`) and click **Add to agent**.
 
